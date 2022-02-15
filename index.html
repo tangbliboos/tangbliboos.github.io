@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>要挨打了</title>
     <style>
+      
+      .left{
+        background-color: rgb(202, 196, 187);
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+      }
+      .right{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:60%
+      }
         .wrapper {
   height: 100vh;
   /*This part is important for centering*/
@@ -38,10 +57,30 @@
     </style>
 </head>
 <body>
+  
+  <div class="left">
+    <script>
+      function changeImage()
+      {
+        element=document.getElementById('myimage')
+        if (element.src.match("bulbon"))
+        {
+          element.src="111.png";
+        }
+        else
+        {
+          element.src="222.png";
+        }
+      }
+      </script>
+      <img id="myimage" onclick="changeImage()" src="111.png" width="100" height="180">
+  </div>
+    <div class="right">
     <div class="wrapper">
-        <div class="typing-demo">
-          Jin teacher add oil.  
+        <div  class="typing-demo">
+          Welcome to my space.  
         </div>
+    </div>
     </div>
 </body>
 </html>
